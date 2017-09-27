@@ -23,7 +23,7 @@ or select a emoji from a specified emoji collection
 gce your-commit-message -c people
 ```
 
-these are equivalent to command below:
+these are equivalent to commands below:
 ```
 git add -A
 git commit -m "[Emoji] your-commit-message
