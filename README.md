@@ -1,5 +1,7 @@
 ## GitRandEmoji
-Add random emoji as git commit message prefix
+Add random emoji as git commit message prefix.
+
+See more detail about emoji collections -> [Emojis](https://github.com/thundernet8/Emojis)
 
 ## Install
 

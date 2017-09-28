@@ -56,16 +56,21 @@ if (collection && collection.length > 0) {
 
 const message = argv._.join(" ");
 
-const commitMsg = `${emoji} ${message}`;
-
-if (argv.t) {
-    console.log(`Generated Message: ${commitMsg}`);
+if (message.trim().length < 1) {
+    console.log("Warning: You must add some message for this commit.");
 } else {
-    console.log("git add -A");
-    console.log(`git commit -m "${commitMsg}"`);
-    exec(`git add -A && git commit -m "${commitMsg}"`, err => {
-        if (err) {
-            return;
-        }
-    });
+    const commitMsg = `${emoji} ${message}`;
+
+    if (argv.t) {
+        console.log(`Generated Message: ${commitMsg}`);
+    } else {
+        console.log("git add -A");
+        console.log(`git commit -m "${commitMsg}"`);
+        exec(`git add -A && git commit -m "${commitMsg}"`, err => {
+            if (err) {
+                console.log(err.message);
+                return;
+            }
+        });
+    }
 }
