@@ -1,5 +1,5 @@
 ## GitRandEmoji
-Add random emoji to git commit message
+Add random emoji as git commit message prefix
 
 ## Install
 
@@ -26,5 +26,5 @@ gce your-commit-message -c people
 these are equivalent to commands below:
 ```
 git add -A
-git commit -m "[Emoji] your-commit-message
+git commit -m "[Emoji] your-commit-message"
 ```
