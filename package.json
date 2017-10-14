@@ -18,6 +18,7 @@
         "typescript": "^2.5.3"
     },
     "dependencies": {
+        "gitrandemoji": "^1.0.4",
         "yargs": "^9.0.1"
     }
 }
