@@ -46,7 +46,12 @@ const argv = yargs
     .epilog("Copyright " + new Date().getFullYear())
     .help().argv;
 
-const collection: any[] = collectionMap[argv.c];
+let collectionKey = argv.c;
+if (Object.keys(collectionMap).indexOf(collectionKey) < 0) {
+    collectionKey = "all";
+}
+
+const collection: any[] = collectionMap[collectionKey];
 let emoji = "";
 if (collection && collection.length > 0) {
     const count = collection.length;

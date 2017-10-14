@@ -1,6 +1,6 @@
 {
     "name": "gitrandemoji",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "main": "./lib/gce.js",
     "repository": "git@github.com:thundernet8/GitRandEmoji.git",
     "author": "wuxueqian <wuxueqian2010@hotmail.com>",
