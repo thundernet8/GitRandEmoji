@@ -46,8 +46,9 @@ const argv = yargs
     .epilog("Copyright " + new Date().getFullYear())
     .help().argv;
 
-let collectionKey = argv.c;
-if (Object.keys(collectionMap).indexOf(collectionKey) < 0) {
+let collectionKey =
+    argv.c !== null && argv.c !== undefined ? argv.c.toString() : "";
+if (!Object.keys(collectionMap).includes(collectionKey)) {
     collectionKey = "all";
 }
 

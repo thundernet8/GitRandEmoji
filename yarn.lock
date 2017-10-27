@@ -78,19 +78,6 @@ get-stream@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-3.0.0.tgz#8e943d1358dc37555054ecbe2edb05aa174ede14"
 
-gitrandemoji@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/gitrandemoji/-/gitrandemoji-1.0.4.tgz#81a77ad0b9516f0ab14df0b424330cb47e6015e5"
-  dependencies:
-    yargs "^9.0.1"
-
-gitrandemoji@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/gitrandemoji/-/gitrandemoji-1.0.5.tgz#0bf10fea55d5eb9533644e388ad1098bb20a542d"
-  dependencies:
-    gitrandemoji "^1.0.4"
-    yargs "^9.0.1"
-
 graceful-fs@^4.1.2:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
