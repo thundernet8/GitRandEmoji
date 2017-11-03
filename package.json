@@ -1,17 +1,19 @@
 {
     "name": "gitrandemoji",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "main": "./lib/gce.js",
     "repository": "git@github.com:thundernet8/GitRandEmoji.git",
     "author": "wuxueqian <wuxueqian2010@hotmail.com>",
     "license": "MIT",
     "bin": {
-        "gce": "./bin/gce"
+        "gce": "./bin/gce",
+        "gcy": "./bin/gcy"
     },
     "scripts": {
         "build": "tsc",
         "prepublish": "npm run build",
-        "test": "./bin/gce commit msg -c people -t"
+        "test": "./bin/gce commit msg -c people -t",
+        "test1": "./bin/gcy commit msg -c general -t"
     },
     "devDependencies": {
         "@types/node": "^8.0.31",
